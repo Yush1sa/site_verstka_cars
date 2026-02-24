@@ -39,6 +39,10 @@ body{
     justify-content: center;
 }
 
+.navbar-menu-item:hover {
+    color: #7a7a7a;
+    
+}
 
 .navbar-user{
     display: grid;
@@ -55,6 +59,17 @@ body{
     border-radius: 8px;
     color: white;
     padding: 10px 32px;
+}
+
+.navbar-user-sign-up:hover{
+    background-color: #1571d39c;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-user-sign-in:hover {
+    color: #7a7a7a;
+    cursor: pointer;
 }
 
 
@@ -122,8 +137,34 @@ body{
 .search-info{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
+
+.search-info-point {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.search-info-point-text{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search-info-point-icon{
+    padding-right: 16px;
+}
+
+.search-info-point-text-details{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #B6B6B6;
+}
+
+
 
 
 
