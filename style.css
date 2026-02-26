@@ -41,6 +41,7 @@ body{
 
 .navbar-menu-item:hover {
     color: #7a7a7a;
+    cursor: pointer;
     
 }
 
@@ -176,6 +177,12 @@ body{
     font-size: 16px;
     line-height: 150%;
     color: #FFFFFF;
+}
+
+.search-button:hover{
+    background-color: #1571d39c;
+    color: white;
+    cursor: pointer;
 }
 
 .info-work {
