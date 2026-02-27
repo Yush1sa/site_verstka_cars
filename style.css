@@ -11,10 +11,33 @@ body{
     color: #484848;
 }
 
+hr {
+    width: 100%;
+    margin: 0px;
+}
+
 .slide{
     display: grid;
     grid-template-rows: auto auto auto;
     margin: 0;
+}
+
+.head {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1572D3;
+    align-items: center;
+    padding: 12px 32px;
+    background: rgba(21, 114, 211, 0.1);
+    border-radius: 8px;
+}
+
+.icon {
+    display: grid;
+    align-items: center;
 }
 
 .navbar{
@@ -198,19 +221,6 @@ body{
     padding-bottom: 80px;
 }
 
-.info-work-title-head {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: #1572D3;
-    align-items: center;
-    padding: 12px 32px;
-    background: rgba(21, 114, 211, 0.1);
-    border-radius: 8px;
-}
-
 .info-work-title-text {
     font-family: 'Poppins';
     font-style: normal;
@@ -233,7 +243,6 @@ body{
     display: grid;
     grid-template-rows: auto auto auto;
     justify-items: center;
-    
 }
 
 .info-work-cards-item-icon {
@@ -295,18 +304,7 @@ body{
     overflow: hidden;
 }
 
-.content-choose-title-head {
-    align-items: flex-start;
-    padding: 12px 32px;
-    background: rgba(21, 114, 211, 0.1);
-    border-radius: 8px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: #1572D3;
-}
+
 
 .content-choose-title-text {
     font-family: 'Poppins';
@@ -383,19 +381,6 @@ body{
     padding-bottom: 64px;
 }
 
-.popular-title-head {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: #1572D3;
-    align-items: center;
-    padding: 12px 32px;
-    background: rgba(21, 114, 211, 0.1);
-    border-radius: 8px;
-}
-
 .popular-title-description {
     font-family: 'Poppins';
     font-style: normal;
@@ -408,4 +393,77 @@ body{
 }
 
 
+.popular-car {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, auto) 1fr;
+    margin-inline: clamp(20px, 10%, 160px);
+    justify-items: center;
+}
 
+.popular-car-card {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    justify-items: center;
+    padding: 24px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 12px 24px rgba(16, 76, 139, 0.16);
+}
+
+.specifications-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #959595;
+}
+
+.popular-car-card-image {
+    padding-bottom: 25px;
+}
+
+
+.popular-car-card-description {
+    display: grid;
+    grid-template-rows: repeat(2, auto) 1fr;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #262626;
+}
+
+.popular-car-card-description-score {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    font-size: 12px;
+    padding: 12px 0px 16px 0px;
+}
+
+.popular-car-card-description-specifications {
+    display: grid;
+    grid-template-columns: 1fr minmax(71px, 75px);
+    column-gap: 19px;
+    justify-items: flex-start;
+}
+
+.popular-car-card-description-specifications-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+
+}
+
+.popular-car-card-description-specifications-item .icon {
+    margin-right: 5px;
+}
+
+.popular-car-card > hr {
+    margin: 24px 0px 24px 0px;
+    border: 1px solid #E0E0E0;
+}
