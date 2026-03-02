@@ -35,6 +35,16 @@ hr {
     border-radius: 8px;
 }
 
+.head-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 130%;
+    text-align: center;
+    color: #333333;
+}
+
 .icon {
     display: grid;
     align-items: center;
@@ -219,30 +229,22 @@ hr {
     grid-template-rows: repeat(2, auto);
     justify-items: center;
     padding-bottom: 80px;
-}
-
-.info-work-title-text {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 130%;
-    text-align: center;
-    padding-top: 32px;
-    color: #333333;
+    row-gap: 32px;
 }
 
 .info-work-cards{
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
     margin-bottom: 160px;
-    margin-inline: clamp(20px, 10%, 160px);
+    column-gap: 82px;
 }
 
 .info-work-cards-item {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(3, auto);
     justify-items: center;
+    width: 230px;
 }
 
 .info-work-cards-item-icon {
@@ -305,24 +307,11 @@ hr {
 }
 
 
-
-.content-choose-title-text {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 130%;
-    color: #333333;
-    padding-top: 16px;
-    padding-bottom: 32px;
-}
-
-
 .content-choose-title-details {
     display: grid;
     grid-template-rows: repeat(4, auto);
     row-gap: 24px;
-    margin-bottom: 91px;
+    margin: 56px 0px 91px;
 }
 
 .content-choose-title-details-item {
@@ -373,32 +362,22 @@ hr {
     justify-items: center;
     grid-template-rows: repeat(3, auto);
     row-gap: 64px;
-    padding: 84px clamp(20px, 10%, 160px) 83px clamp(20px, 10%, 160px);
+    padding: 84px 0px 83px;
 }
 
 .popular-title {
     display: grid;
     grid-template-rows: repeat(2, auto);
     justify-items: center;
+    row-gap: 24px;
 }
 
-.popular-title-description {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 130%;
-    text-align: center;
-    padding-top: 24px;
-    color: #333333;
-}
 
 
 .popular-car {
     display: grid;
     grid-template-columns: repeat(4, auto);
     column-gap: 32px;
-    justify-items: center;
 }
 
 .popular-car-card {
@@ -517,4 +496,59 @@ hr {
     padding: 14px 34px;
     border: 1px solid #E0E0E0;
     border-radius: 8px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 80px;
+}
+
+.testimonials-title {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    row-gap: 24px;
+}
+
+.scroll-wrapper {
+    overflow: hidden;
+    padding-bottom: 127px;
+}
+
+.testimonials-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 794px);
+    column-gap: 40px;
+    justify-content: center;
+    margin: 0 -80px;
+}
+
+.testimonials-cards-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    background: #FFFFFF;
+    box-shadow: 0px 12px 24px rgba(16, 76, 139, 0.16);
+    border-radius: 24px;
+}
+
+.testimonials-cards-item-image {
+    display: grid;
+}
+
+.testimonials-cards-item-info {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    padding: 40px;
+}
+
+.testimonials-cards-item-score-number{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 150%;
+    color: #383838;
 }
