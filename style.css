@@ -542,6 +542,15 @@ hr {
     display: grid;
     grid-template-rows: repeat(3, auto);
     padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-cards-item-score {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    row-gap: 12px;
 }
 
 .testimonials-cards-item-score-number{
@@ -549,6 +558,52 @@ hr {
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
-    line-height: 150%;
     color: #383838;
+    line-height: 1;
+}
+
+.testimonials-cards-item-score .icon{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 4px;
+}
+.icon-item {
+    display: grid;
+    align-items: center;
+}
+
+.testimonials-cards-item-comment {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #282828;
+    padding: 35px 0 75px;
+}
+
+.testimonials-cards-item-data{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 8px;
+}
+
+.testimonials-cards-item-data-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    color: #252525;
+}
+
+.testimonials-cards-item-data-location {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: #838383;
 }
