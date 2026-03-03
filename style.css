@@ -45,6 +45,8 @@ hr {
     color: #333333;
 }
 
+
+
 .icon {
     display: grid;
     align-items: center;
@@ -109,18 +111,18 @@ hr {
 .content{
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 99px;
-    margin-left: clamp(20px, 10%, 160px);
+    padding-top: 99px;
+    padding-left: clamp(20px, 10%, 160px);
     column-gap: 99px;
 }
 
 .content-title{
-    padding-top: 58px;
     display: grid;
     grid-template-rows: repeat(3, auto);
     row-gap: 40px;
     align-content: start;
     justify-content: flex-end;
+    padding-top: 58px;
 }
 
 
@@ -288,7 +290,7 @@ hr {
 .content-choose {
     display: grid;
     grid-template-columns: auto auto;
-    margin-right: clamp(20px, 10%, 160px);
+    padding-right: clamp(20px, 10%, 160px);
     column-gap: 101px;
     padding-top: 92px;
 }
@@ -311,7 +313,7 @@ hr {
     display: grid;
     grid-template-rows: repeat(4, auto);
     row-gap: 24px;
-    margin: 56px 0px 91px;
+    padding: 56px 0px 91px;
 }
 
 .content-choose-title-details-item {
@@ -606,4 +608,54 @@ hr {
     font-size: 14px;
     line-height: 1;
     color: #838383;
+}
+
+.download-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 160px;
+    column-gap: 199px;
+    justify-content: center;
+    pad
+}
+
+.download-content-text {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 24px;  
+    justify-content: center;
+    justify-items: flex-start;
+    padding: 28px 0 100px;
+}
+
+
+.download-content-text-title {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 40px;
+}
+
+.download-content-text-title-head {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1;
+    color: #282828;
+}
+
+.download-content-title-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: #3E3E3E;
+}
+
+.download-content-image {
+    display: grid;
+    align-items: flex-end;
+    justify-content: flex-start;
+    overflow: hidden;
 }
