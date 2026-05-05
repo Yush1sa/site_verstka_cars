@@ -722,8 +722,13 @@ hr {
     gap: 12px;
     font-size: 14px;
     color: #D6D6D6;
-    line-height: 150%;
     align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
 }
 
 .contact-item img {
